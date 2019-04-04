@@ -1,0 +1,11 @@
+
+public class GoodFirstProgram{
+
+	public static void main(String[] args){
+	
+    //Classic Hello World progam that prints to console.
+		System.out.println("Hello world.");	
+	
+	}
+
+}
