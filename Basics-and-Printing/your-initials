@@ -1,0 +1,14 @@
+public class yourInitials{
+
+	public static void main(String[] args){
+
+	System.out.println("M   M  JJJJJ  H   H\n" 
+			+  "MM MM    J    H   H\n"
+			+  "MM MM    J    HHHHH\n"
+			+  "M M M    J    H   H\n"
+			+  "M   M  J J    H   H\n"
+			+  "M   M   JJ    H   H\n"); 
+			
+		}
+
+}
