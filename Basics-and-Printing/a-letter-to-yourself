@@ -1,0 +1,163 @@
+public class LetterToYourself{
+	
+	//Method to print top and bottom edge of envelope
+	private static void topAndBottom(){
+	
+		int lines = 0;
+		
+		System.out.print("+");
+		
+		while(lines <= 50){		
+			System.out.print("-");
+			lines++;
+		}
+		
+		System.out.print("+\n");	
+	
+	}
+	
+	//Method to print top portion of envelope that contains
+	private static void topPortion(){
+	
+		int lines = 0;
+		
+		System.out.print("|");
+		
+		while(lines <= 50){
+			
+			if(lines >= 44 && lines <= 46){
+				System.out.print("#");
+				lines++;
+			}else{		
+				System.out.print(" ");
+				lines++;        
+			}
+	}
+		
+		System.out.print("|\n");	
+	
+	}
+	
+	//Method to print gap before and after address
+	private static void gap(){
+	
+		int lines = 0;
+		
+		System.out.print("|");
+		
+		while(lines <= 50){		
+			System.out.print(" ");
+			lines++;
+		}
+		
+		System.out.print("|\n");	
+	
+	}	
+	
+	
+	//Method to print address name section
+	private static void addressPortionName(){
+	
+		int lines = 0;
+		String name = "Marquis Hall";
+		int nameLength = name.length();
+				
+		System.out.print("|");
+		
+		while(lines <= 50){
+			
+			if(lines == 15){				
+				System.out.print(name);
+				lines += nameLength;		
+			
+			} else{
+			
+				System.out.print(" ");
+				lines++;
+			
+			}			
+			
+			
+		}
+		
+			System.out.print("|\n");	
+	
+	}
+	
+	
+	//Method to print address location section
+	private static void addressPortionLocation(){
+	
+		int lines = 0;
+		String name = "1 Microsoft Way";
+		int nameLength = name.length();
+				
+		System.out.print("|");
+		
+		while(lines <= 50){
+			
+			if(lines == 15){				
+				System.out.print(name);
+				lines += nameLength;				
+			
+			} else{
+			
+				System.out.print(" ");
+				lines++;
+			
+			}		
+			
+			
+		}
+		
+			System.out.print("|\n");	
+	
+	}
+	
+	
+	//Method to print address City State Zip Code section
+	private static void addressPortionCityStateZip(){
+	
+		int lines = 0;
+		String name = "Redmond, WA 98104";
+		int nameLength = name.length();
+				
+		System.out.print("|");
+		
+		while(lines <= 50){
+			
+			if(lines == 15){				
+				System.out.print(name);
+				lines += nameLength;				
+			
+			} else{
+			
+				System.out.print(" ");
+				lines++;
+			
+			}			
+			
+		}
+		
+			System.out.print("|\n");	
+	
+	}		
+	
+	public static void main(String[] args){
+	
+		topAndBottom();
+		topPortion();
+		topPortion();
+		topPortion();
+		gap();
+		gap();
+		addressPortionName();
+		addressPortionLocation();
+		addressPortionCityStateZip();
+		gap();
+		topAndBottom();		
+	
+	}
+
+
+}
